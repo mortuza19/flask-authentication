@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  display: block;
+  margin: auto;
+  padding: 24px;
+}
+
+button {
+  width: 30%;
+  background-color: #0a2351;
+  color: white;
+  padding: 8px 12px;
+  font-weight: 600;
+  margin: 1rem auto;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+}
+
+button:active,
+button:hover {
+  background-color: #032b75;
+}
+
+.custom-file-input {
+    display: block;
+    margin: auto;
+}
+
+.image-container {
+    display: flex;
+}
+
+#my_camera {
+    margin-right: 3rem;
+}
+
+#my_camera,
+#results,
+#image {
+  display: block;
+  margin: auto;
+}
+
+.or {
+    padding: 16px 0px;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

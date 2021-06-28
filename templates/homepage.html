@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Homepage</title>
+    </head>
+    <body>
+        {% if email %}
+          <h1>Hello {{ email }}!</h1>
+        {% else %}
+          <h1>Hello, World!</h1>
+        {% endif %}
+    </body>
+</html>

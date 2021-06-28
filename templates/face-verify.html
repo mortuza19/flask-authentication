@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Verify</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+        <script src="{{url_for('static', filename='jsfiles/upload.js')}}"></script>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles/upload.css')}}">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main class="container">
+            <form action="/face-verify" method="POST" enctype="multipart/form-data" id="myForm">
+
+                <div class="upload-section">
+                    <div class="image-container">
+                        <input type="hidden" name="image" id="image">
+                        <div id="my_camera"></div>
+                        <div class="d-none"></div>
+                    </div>
+                    <button type="button" onclick="snap()">Take a snapshot</button>
+                </div>
+                <div class="form control">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+
+        </main>
+    </body>
+</html>

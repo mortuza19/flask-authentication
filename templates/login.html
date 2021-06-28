@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles/signup.css')}}">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="login-section">
+            <form method="POST" action="/login" enctype="multipart/form-data">
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email"/>
+                </div>
+                <div class="form-control">
+                    <button type="submit">Proceed</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
